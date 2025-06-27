@@ -1,0 +1,165 @@
+/* Debug version with intentional mistakes */
+* {
+    /* Missing box-sizing */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Missing font-family */
+    /* Wrong background color */
+    background-color: white;
+    /* Missing color */
+    /* Missing min-height */
+    /* Wrong display type */
+    display: block;
+}
+
+/* Missing container styles */
+
+h1 {
+    /* Wrong text alignment */
+    text-align: left;
+    /* Missing margin */
+    font-size: 2.5rem;
+}
+
+h2 {
+    /* Wrong color */
+    color: black;
+    /* Missing margin */
+}
+
+/* Wrong class name */
+.loader-section {
+    /* Missing margin */
+}
+
+/* Missing loaders grid styles */
+
+.loader {
+    /* Wrong dimensions */
+    width: 50px;
+    height: 50px;
+}
+
+/* Spinner Loaders with mistakes */
+.spinner-1 {
+    /* Wrong border style */
+    border: 1px solid black;
+    /* Missing border-left-color */
+    border-radius: 50%;
+    /* Wrong animation duration */
+    animation: spin 2s linear infinite;
+}
+
+.spinner-2 {
+    /* Missing border style */
+    border-radius: 50%;
+    /* Missing border colors */
+    /* Wrong animation */
+    animation: spin 1s linear infinite;
+}
+
+.spinner-3 {
+    /* Wrong border color */
+    border: 4px solid black;
+    /* Missing border-radius */
+    /* Missing opacity */
+    /* Wrong animation */
+    animation: spin 1s linear infinite;
+}
+
+/* Pulse Loaders with mistakes */
+.pulse-1 {
+    /* Wrong background color */
+    background-color: black;
+    /* Missing border-radius */
+    /* Wrong animation */
+    animation: pulse 1s linear infinite;
+}
+
+.pulse-2 {
+    /* Wrong background color */
+    background-color: black;
+    /* Missing clip-path */
+    /* Wrong animation */
+    animation: pulse 1s linear infinite;
+}
+
+.pulse-3 {
+    /* Wrong background color */
+    background-color: black;
+    /* Wrong border-radius */
+    border-radius: 50%;
+    /* Wrong animation */
+    animation: pulse 1s linear infinite;
+}
+
+/* Dots Loaders with mistakes */
+.dots-1 {
+    /* Wrong display type */
+    display: block;
+    /* Missing justify-content */
+    /* Missing align-items */
+    /* Missing gap */
+}
+
+.dots-1 span {
+    /* Wrong dimensions */
+    width: 8px;
+    height: 8px;
+    /* Wrong background color */
+    background-color: black;
+    /* Missing border-radius */
+    /* Wrong animation */
+    animation: dots-bounce 1s linear infinite;
+}
+
+/* Missing dots-2 styles */
+
+/* Missing dots-3 styles */
+
+/* Bar Loaders with mistakes */
+.bar-1 {
+    /* Wrong display type */
+    display: block;
+    /* Missing justify-content */
+    /* Missing align-items */
+    /* Missing gap */
+}
+
+.bar-1 span {
+    /* Wrong dimensions */
+    width: 4px;
+    height: 20px;
+    /* Wrong background color */
+    background-color: black;
+    /* Wrong animation */
+    animation: bar-wave 2s linear infinite;
+}
+
+/* Missing bar-2 styles */
+
+/* Wrong animation keyframes */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+}
+
+@keyframes dots-bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+@keyframes bar-wave {
+    0% { transform: scaleY(1); }
+    100% { transform: scaleY(0.5); }
+}
+
+/* Missing animation delays */ 
