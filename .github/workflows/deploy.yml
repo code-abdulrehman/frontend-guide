@@ -26,8 +26,10 @@ jobs:
 
       - name: Create build directory
         run: |
-          mkdir -p build
+          # Create all required directories first
           mkdir -p build/debug
+          mkdir -p build/buttons build/blog build/landing build/gallery build/profile build/pricing
+          mkdir -p build/debug/buttons build/debug/blog build/debug/landing build/debug/gallery build/debug/profile build/debug/pricing
           
           # Copy html_and_css project files
           cp -r html_and_css/project/buttons-collection/* build/buttons/
@@ -44,10 +46,6 @@ jobs:
           cp -r html_and_css/debug/image-gallery/* build/debug/gallery/
           cp -r html_and_css/debug/profile-card/* build/debug/profile/
           cp -r html_and_css/debug/pricing-table/* build/debug/pricing/
-          
-          # Create directories first
-          mkdir -p build/buttons build/blog build/landing build/gallery build/profile build/pricing
-          mkdir -p build/debug/buttons build/debug/blog build/debug/landing build/debug/gallery build/debug/profile build/debug/pricing
           
           # Copy index files
           cp html_and_css/debug/index.html build/debug/
