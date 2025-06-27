@@ -4,28 +4,28 @@ A collection of frontend projects for learning and practice, including both work
 
 ## Live Demos
 
-Visit our GitHub Pages site to see all projects in action: https://YOUR_USERNAME.github.io/frontend-guide/
+Visit our GitHub Pages site to see all projects in action: https://code-abdulrehman.github.io/frontend-guide/
 
 ## Projects
 
 ### 1. Buttons Collection
-- [Demo](https://YOUR_USERNAME.github.io/frontend-guide/buttons/)
-- [Debug Version](https://YOUR_USERNAME.github.io/frontend-guide/debug-buttons/)
+- [Demo](https://code-abdulrehman.github.io/frontend-guide/buttons/)
+- [Debug Version](https://code-abdulrehman.github.io/frontend-guide/debug-buttons/)
 - Features: Basic, outlined, sharp, shadow, gradient, and 3D buttons
 
 ### 2. Blog Layout
-- [Demo](https://YOUR_USERNAME.github.io/frontend-guide/blog/)
-- [Debug Version](https://YOUR_USERNAME.github.io/frontend-guide/debug-blog/)
+- [Demo](https://code-abdulrehman.github.io/frontend-guide/blog/)
+- [Debug Version](https://code-abdulrehman.github.io/frontend-guide/debug-blog/)
 - Features: Responsive layout, sidebar, featured posts
 
 ### 3. Landing Page
-- [Demo](https://YOUR_USERNAME.github.io/frontend-guide/landing/)
-- [Debug Version](https://YOUR_USERNAME.github.io/frontend-guide/debug-landing/)
+- [Demo](https://code-abdulrehman.github.io/frontend-guide/landing/)
+- [Debug Version](https://code-abdulrehman.github.io/frontend-guide/debug-landing/)
 - Features: Hero section, features showcase, call-to-action
 
 ### 4. Image Gallery
-- [Demo](https://YOUR_USERNAME.github.io/frontend-guide/gallery/)
-- [Debug Version](https://YOUR_USERNAME.github.io/frontend-guide/debug-gallery/)
+- [Demo](https://code-abdulrehman.github.io/frontend-guide/gallery/)
+- [Debug Version](https://code-abdulrehman.github.io/frontend-guide/debug-gallery/)
 - Features: Grid layout, lightbox functionality
 
 ## Project Structure
@@ -50,7 +50,7 @@ frontend-guide/
 ## Setup Instructions
 
 1. Fork this repository
-2. Replace `YOUR_USERNAME` in the following files with your GitHub username:
+2. Replace `code-abdulrehman` in the following files with your GitHub username:
    - `index.html`
    - `README.md`
 3. Enable GitHub Pages in your repository settings:
