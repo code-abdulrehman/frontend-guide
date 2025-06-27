@@ -1,0 +1,152 @@
+/* Debug version with intentional mistakes */
+* {
+    /* Missing box-sizing */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Missing font-family */
+    /* Wrong background color */
+    background-color: white;
+    /* Wrong color */
+    color: black;
+    /* Missing line-height */
+    /* Wrong min-height */
+    min-height: 50vh;
+    /* Wrong padding */
+    padding: 10px;
+}
+
+/* Wrong class name */
+.price-section {
+    /* Missing margin */
+}
+
+h1 {
+    /* Wrong text alignment */
+    text-align: left;
+    /* Missing margin */
+    /* Wrong font size */
+    font-size: 24px;
+}
+
+.price-section h2 {
+    /* Wrong text alignment */
+    text-align: left;
+    /* Missing margin */
+    /* Wrong font size */
+    font-size: 20px;
+    /* Missing position */
+    /* Missing transform */
+}
+
+/* Missing save badge styles */
+
+/* Wrong class name */
+.price-grid {
+    /* Wrong display type */
+    display: flex;
+    flex-wrap: wrap;
+    /* Missing gap */
+    /* Wrong padding */
+    padding: 5px;
+}
+
+/* Wrong class name */
+.card {
+    /* Wrong background */
+    background: #eee;
+    /* Missing border-radius */
+    /* Wrong box-shadow */
+    box-shadow: none;
+    /* Missing overflow */
+    /* Missing transition */
+    /* Missing position */
+    /* Wrong width */
+    width: 300px;
+    /* Wrong margin */
+    margin: 10px;
+}
+
+/* Missing card hover effect */
+
+/* Missing popular card styles */
+
+/* Missing popular badge styles */
+
+/* Wrong class name */
+.header {
+    /* Wrong padding */
+    padding: 10px;
+    /* Wrong background */
+    background: white;
+    /* Wrong text alignment */
+    text-align: left;
+    /* Missing border */
+}
+
+.header h3 {
+    /* Wrong font size */
+    font-size: 16px;
+    /* Wrong color */
+    color: black;
+    /* Missing margin */
+}
+
+/* Wrong price structure */
+.price {
+    /* Wrong font size */
+    font-size: 20px;
+    /* Wrong color */
+    color: black;
+    /* Missing font weight */
+}
+
+/* Missing currency styles */
+/* Missing period styles */
+/* Missing original price styles */
+
+/* Wrong class name */
+.body {
+    /* Wrong padding */
+    padding: 10px;
+}
+
+/* Missing features styles */
+
+/* Wrong list styles */
+ul li {
+    /* Missing margin */
+    /* Wrong color */
+    color: black;
+}
+
+/* Missing icon styles */
+/* Missing disabled styles */
+
+/* Missing button styles */
+button {
+    /* Wrong display */
+    display: inline-block;
+    /* Wrong width */
+    width: auto;
+    /* Wrong padding */
+    padding: 5px;
+    /* Wrong background */
+    background: gray;
+    /* Wrong color */
+    color: black;
+    /* Missing border */
+    /* Missing border-radius */
+    /* Wrong font size */
+    font-size: 12px;
+    /* Missing font weight */
+    /* Missing cursor */
+    /* Missing transition */
+}
+
+/* Missing button hover effect */
+/* Missing popular button styles */
+
+/* Missing media queries */ 
