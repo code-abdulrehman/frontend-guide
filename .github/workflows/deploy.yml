@@ -32,12 +32,12 @@ jobs:
           mkdir -p build/debug/buttons build/debug/blog build/debug/landing build/debug/gallery build/debug/profile build/debug/pricing
           
           # Copy html_and_css project files
-          cp -r html_and_css/project/buttons-collection/* build/buttons/
-          cp -r html_and_css/project/blog-layout/* build/blog/
-          cp -r html_and_css/project/landing-page/* build/landing/
-          cp -r html_and_css/project/image-gallery/* build/gallery/
-          cp -r html_and_css/project/profile-card/* build/profile/
-          cp -r html_and_css/project/pricing-table/* build/pricing/
+          cp -r html_and_css/project/buttons-collection build/buttons/
+          cp -r html_and_css/project/blog-layout build/blog/
+          cp -r html_and_css/project/landing-page build/landing/
+          cp -r html_and_css/project/image-gallery build/gallery/
+          cp -r html_and_css/project/profile-card build/profile/
+          cp -r html_and_css/project/pricing-table build/pricing/
           
           # Copy html_and_css debug files
           cp -r html_and_css/debug/buttons-collection/* build/debug/buttons/
