@@ -1,0 +1,108 @@
+/* Debug version with common CSS mistakes */
+* {
+    margin: 0;
+    padding: 0;
+    /* Missing box-sizing: border-box causing layout issues */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Missing background-color */
+    /* Wrong padding value */
+    padding: 10px;
+}
+
+.gallery-container {
+    /* Wrong max-width value */
+    max-width: 100%;
+    /* Missing margin: 0 auto for centering */
+}
+
+h1 {
+    /* Missing text-align: center */
+    color: #2d3748;
+    /* Wrong margin value */
+    margin-bottom: 10px !important;
+}
+
+.filter-buttons {
+    /* Wrong display type */
+    display: block;
+    /* Missing justify-content and gap */
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    /* Incorrect padding */
+    padding: 5px;
+    border: none;
+    /* Missing border-radius */
+    background: white;
+    color: #4a5568;
+    /* Missing cursor: pointer */
+    /* Missing transition */
+    /* Missing box-shadow */
+    /* Wrong margin causing button spacing issues */
+    margin: 0 2px;
+}
+
+/* Missing hover state for filter buttons */
+
+.filter-btn.active {
+    /* Wrong background color */
+    background: #000;
+    color: white;
+}
+
+.gallery {
+    /* Wrong display type */
+    display: flex;
+    flex-wrap: wrap;
+    /* Missing gap property */
+    padding: 1rem;
+}
+
+.gallery-item {
+    /* Wrong width calculation */
+    width: 30%;
+    margin: 1%;
+    /* Missing position: relative causing overlay issues */
+    /* Missing border-radius */
+    /* Missing overflow: hidden */
+    /* Missing box-shadow */
+    /* Missing transition */
+}
+
+.gallery-item img {
+    width: 100%;
+    /* Missing height and object-fit properties causing image distortion */
+}
+
+.overlay {
+    /* Wrong position type */
+    position: relative;
+    /* Missing bottom, left, right properties */
+    /* Wrong background gradient */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1rem;
+    /* Missing transform for slide-up effect */
+    /* Missing transition */
+}
+
+/* Missing hover state for overlay */
+
+.overlay h3 {
+    /* Wrong margin */
+    margin: 5px 0;
+    /* Wrong font size */
+    font-size: 16px;
+}
+
+.overlay p {
+    /* Wrong font size */
+    font-size: 12px;
+    /* Missing opacity */
+}
+
+/* Missing media queries for responsive design */ 

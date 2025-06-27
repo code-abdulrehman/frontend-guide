@@ -1,0 +1,142 @@
+/* Debug version with common CSS mistakes */
+* {
+    margin: 0;
+    padding: 0;
+    /* Missing box-sizing: border-box */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Missing background-color */
+    /* Wrong padding */
+    padding: 5px;
+}
+
+.container {
+    /* Wrong max-width */
+    max-width: 90%;
+    /* Missing margin: 0 auto */
+    margin: 10px;
+    padding: 1rem;
+    /* Missing background color */
+    /* Missing border-radius */
+    /* Missing box-shadow */
+}
+
+h1 {
+    /* Missing text-align: center */
+    color: #2d3748;
+    /* Wrong margin */
+    margin: 10px 0;
+}
+
+.button-section {
+    /* Wrong margin */
+    margin: 10px 0;
+}
+
+h2 {
+    color: #4a5568;
+    /* Wrong margin */
+    margin: 5px 0;
+    /* Wrong font size */
+    font-size: 18px !important;
+}
+
+.button-group {
+    /* Wrong display type */
+    display: block;
+    /* Missing gap */
+    /* Missing flex-wrap */
+    /* Missing align-items */
+}
+
+/* Base Button Styles */
+.btn {
+    /* Wrong padding */
+    padding: 5px 10px;
+    /* Missing border: none */
+    /* Missing border-radius */
+    font-size: 1rem;
+    /* Missing cursor: pointer */
+    /* Missing transition */
+    /* Wrong display type */
+    display: inline-block;
+    /* Missing align-items and justify-content */
+    margin: 5px;
+}
+
+/* Button Colors - Using wrong colors */
+.btn.primary {
+    background: blue;
+    color: white;
+}
+
+.btn.secondary {
+    background: gray;
+    color: white;
+}
+
+.btn.success {
+    background: green;
+    color: white;
+}
+
+.btn.danger {
+    background: red;
+    color: white;
+}
+
+/* Missing hover effects */
+
+/* Outlined Buttons - Wrong implementation */
+.btn-outline {
+    /* Wrong border style */
+    border: 1px solid;
+}
+
+.btn-outline.primary {
+    /* Missing background: transparent */
+    color: blue;
+    border-color: blue;
+}
+
+/* Missing other outlined button styles */
+
+/* Rounded Buttons - Wrong border-radius */
+.btn-rounded {
+    border-radius: 5px;
+}
+
+/* Icon Buttons - Wrong implementation */
+.btn-icon {
+    /* Wrong padding */
+    padding: 5px;
+}
+
+.icon {
+    /* Wrong font size */
+    font-size: 12px;
+}
+
+/* Button Sizes - Wrong implementations */
+.btn-small {
+    /* Wrong padding and font size */
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+.btn-large {
+    /* Wrong padding and font size */
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* Missing active state */
+
+/* Wrong focus state */
+.btn:focus {
+    outline: 1px solid blue;
+}
+
+/* Missing media queries */ 

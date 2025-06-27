@@ -1,0 +1,100 @@
+/* Debug version with common CSS mistakes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    /* Missing display: flex and alignment properties */
+    background-color: #f0f2f5;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    /* Missing overflow: hidden causing image to overflow */
+}
+
+.profile-header {
+    background: linear-gradient(45deg, #4a90e2, #63b3ed);
+    height: 120px;
+    /* Missing position: relative causing image positioning issues */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    /* Wrong positioning values */
+    bottom: -30px;
+    left: 30%;
+    /* Missing transform causing misalignment */
+}
+
+.profile-content {
+    /* Wrong padding causing overlap with image */
+    padding: 30px;
+    text-align: center;
+}
+
+.name {
+    color: #2d3748;
+    /* Missing margin-bottom */
+}
+
+.title {
+    color: #718096;
+    font-size: 0.9em;
+    /* Missing margin-bottom */
+}
+
+.bio {
+    color: #4a5568;
+    /* Missing line-height making text hard to read */
+    margin-bottom: 25px;
+}
+
+.stats {
+    /* Wrong display type */
+    display: block;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.stat-item {
+    /* Missing flex properties causing layout issues */
+    margin: 10px 0;
+}
+
+.stat-number {
+    color: #2d3748;
+    font-weight: bold;
+    font-size: 1.2em !important; /* Bad practice using !important */
+}
+
+.stat-label {
+    color: #718096;
+    font-size: 0.8em;
+    /* Missing margin-top */
+}
+
+.connect-btn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 1em;
+    /* Missing cursor: pointer */
+    /* Missing transition */
+}
+
+/* Missing hover state */ 

@@ -1,0 +1,217 @@
+/* Debug version with common CSS mistakes */
+* {
+    margin: 0;
+    padding: 0;
+    /* Missing box-sizing: border-box */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Missing line-height */
+    /* Wrong background color */
+    background-color: white;
+}
+
+a {
+    /* Missing text-decoration: none */
+    color: blue;
+    /* Missing transition */
+}
+
+/* Header Styles */
+.main-header {
+    background: white;
+    /* Missing box-shadow */
+    /* Wrong position type */
+    position: absolute;
+    width: 100%;
+    /* Missing z-index causing layering issues */
+}
+
+.navbar {
+    /* Wrong max-width */
+    max-width: 100%;
+    /* Missing margin: 0 auto */
+    padding: 10px;
+    /* Wrong display type */
+    display: block;
+}
+
+.logo {
+    /* Wrong font size */
+    font-size: 16px;
+    font-weight: bold;
+    /* Wrong color */
+    color: black;
+}
+
+.nav-links {
+    /* Wrong display type */
+    display: inline-block;
+    list-style: none;
+    /* Missing gap */
+    margin-top: 10px;
+}
+
+.nav-links li {
+    /* Wrong display type */
+    display: block;
+    margin: 5px 0;
+}
+
+/* Main Container */
+.container {
+    /* Wrong max-width */
+    max-width: 100%;
+    /* Wrong margin causing header overlap */
+    margin: 20px auto;
+    padding: 10px;
+    /* Wrong display type */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    /* Missing position: sticky */
+    width: 100%;
+    /* Wrong margin */
+    margin-bottom: 10px;
+}
+
+.profile-card {
+    /* Missing background */
+    padding: 10px;
+    /* Missing border-radius */
+    /* Missing box-shadow */
+    text-align: center;
+}
+
+.profile-img {
+    /* Wrong dimensions */
+    width: 100px;
+    height: 100px;
+    /* Missing border-radius */
+}
+
+.categories, .popular-posts {
+    /* Missing background */
+    padding: 10px;
+    /* Missing border-radius */
+    /* Missing box-shadow */
+    margin: 10px 0;
+}
+
+/* Content Styles */
+.post {
+    /* Missing background */
+    /* Missing border-radius */
+    /* Missing overflow: hidden */
+    margin-bottom: 10px;
+}
+
+.post-img {
+    width: 100%;
+    /* Missing height and object-fit */
+}
+
+.post-content {
+    /* Wrong padding */
+    padding: 10px;
+}
+
+.post h2 {
+    /* Wrong color */
+    color: black;
+    /* Wrong margin */
+    margin: 5px 0;
+}
+
+.post-meta {
+    /* Wrong display type */
+    display: block;
+    /* Missing gap */
+    margin: 5px 0;
+}
+
+.post-meta span {
+    /* Wrong display and margin */
+    display: block;
+    margin: 2px 0;
+}
+
+/* Pagination */
+.pagination {
+    /* Wrong display type */
+    display: block;
+    text-align: center;
+    /* Wrong margin */
+    margin: 10px 0;
+}
+
+.pagination a, .pagination span {
+    /* Wrong padding */
+    padding: 5px;
+    /* Missing border */
+    /* Missing border-radius */
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* Footer Styles */
+.main-footer {
+    /* Wrong background */
+    background: gray;
+    color: white;
+    /* Wrong padding */
+    padding: 10px 0;
+}
+
+.footer-content {
+    /* Wrong max-width */
+    max-width: 100%;
+    /* Missing margin: 0 auto */
+    padding: 10px;
+    /* Wrong display type */
+    display: block;
+}
+
+.footer-section {
+    /* Wrong margin */
+    margin: 10px 0;
+}
+
+.newsletter-form {
+    /* Wrong display type */
+    display: block;
+}
+
+.newsletter-form input {
+    /* Wrong width */
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    /* Missing border-radius */
+}
+
+.newsletter-form button {
+    /* Wrong width */
+    width: 100%;
+    padding: 5px;
+    background: blue;
+    color: white;
+    /* Missing border: none */
+    /* Missing border-radius */
+    /* Missing cursor: pointer */
+    /* Missing transition */
+}
+
+.footer-bottom {
+    /* Wrong text alignment */
+    text-align: left;
+    padding: 10px;
+    /* Wrong border style */
+    border-top: 1px dotted gray;
+}
+
+/* Missing media queries for responsive design */ 

@@ -1,0 +1,138 @@
+/* Debug version with common CSS mistakes */
+* {
+    margin: 0;
+    padding: 0;
+    /* Missing box-sizing: border-box causing layout issues */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Missing line-height */
+}
+
+.navbar {
+    /* Missing display: flex causing navigation layout issues */
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Missing position: fixed and width: 100% causing scroll issues */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    /* Wrong display type */
+    display: inline-block;
+    list-style: none;
+    /* Missing gap property */
+}
+
+.nav-links li {
+    /* Incorrect margin causing spacing issues */
+    margin: 0 5px;
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    /* Missing transition */
+}
+
+.hero {
+    /* Wrong display type */
+    display: block;
+    padding: 2rem 5%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* Missing min-height causing content overlap */
+}
+
+.hero-content {
+    /* Missing flex properties */
+    width: 100%;
+    padding: 1rem;
+}
+
+.hero-content h1 {
+    /* Wrong font size */
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+}
+
+.cta-buttons {
+    /* Missing display: flex */
+    margin: 1rem 0;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* Missing cursor: pointer */
+    /* Missing transition */
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.primary-btn {
+    background: #4a90e2;
+    color: white;
+    /* Missing border: none causing double border */
+}
+
+.secondary-btn {
+    /* Wrong border style */
+    border: 1px dotted #4a90e2;
+    color: #4a90e2;
+}
+
+.hero-image {
+    /* Wrong width causing overflow */
+    width: 120%;
+}
+
+.hero-image img {
+    width: 100%;
+    /* Missing height: auto causing image distortion */
+}
+
+.features {
+    padding: 2rem;
+    /* Missing background color */
+}
+
+.features h2 {
+    /* Missing text-align: center */
+    font-size: 2.5rem;
+    /* Incorrect margin */
+    margin: 10px;
+}
+
+.feature-grid {
+    /* Wrong display type */
+    display: flex;
+    flex-wrap: wrap;
+    /* Missing gap property */
+}
+
+.feature-card {
+    /* Wrong width calculation */
+    width: 33%;
+    padding: 1rem;
+    /* Missing border-radius */
+    /* Missing box-shadow */
+    /* Missing transition */
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+    /* Missing border-radius for circular image */
+}
+
+/* Missing media queries for responsive design */ 
