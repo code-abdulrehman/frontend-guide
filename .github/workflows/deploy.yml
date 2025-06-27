@@ -1,0 +1,68 @@
+name: Deploy Multiple Projects to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Create build directory
+        run: |
+          mkdir -p build
+          mkdir -p build/debug
+          
+          # Copy HTML + CSS project files
+          cp -r "html + css/project/buttons-collection" build/buttons
+          cp -r "html + css/project/blog-layout" build/blog
+          cp -r "html + css/project/landing-page" build/landing
+          cp -r "html + css/project/image-gallery" build/gallery
+          cp -r "html + css/project/profile-card" build/profile
+          cp -r "html + css/project/loader-animation" build/loader
+          cp -r "html + css/project/pricing-table" build/pricing
+          
+          # Copy HTML + CSS debug files
+          cp -r "html + css/debug/buttons-collection" build/debug/buttons
+          cp -r "html + css/debug/blog-layout" build/debug/blog
+          cp -r "html + css/debug/landing-page" build/debug/landing
+          cp -r "html + css/debug/image-gallery" build/debug/gallery
+          cp -r "html + css/debug/profile-card" build/debug/profile
+          cp -r "html + css/debug/loader-animation" build/debug/loader
+          cp -r "html + css/debug/pricing-table" build/debug/pricing
+          
+          # Copy root files
+          cp index.html build/ 2>/dev/null || true
+          cp -r assets build/ 2>/dev/null || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
