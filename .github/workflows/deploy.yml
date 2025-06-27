@@ -39,6 +39,7 @@ jobs:
           cp -r "html_and_css/project/pricing-table" build/pricing
           
           # Copy html_and_css debug files
+          cp -r "html_and_css/debug/index.html" build/debug/
           cp -r "html_and_css/debug/buttons-collection" build/debug/buttons
           cp -r "html_and_css/debug/blog-layout" build/debug/blog
           cp -r "html_and_css/debug/landing-page" build/debug/landing
